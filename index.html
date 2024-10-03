@@ -35,16 +35,61 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>lorem ipsum</p>
+          <p>Full Stack Software Engineer with two years of experience.</p>
+          <p>I use Python, HTML, CSS, JavaScript, and React</p>
+          <p>During my free time, </p>
 
           <div class="tab-titles">
-            <p class="tab-links">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills" >
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Wood Mackenzie</span><br>Full Stack Engineer</li>
+              <li><span>Regeneron</span><br>Co-op in Data Science team</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Northeastern University</span><br>Masters in Data Science</li>
+              <li><span>Bridgewater State University</span><br>Bachelors in Computer Science</li>
+              <li><span>Kyungpook National University</span><br>Chinese Language and Literature (Drop Out)</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    console.log('tablinks', tablinks)
+    console.log('tab contents ', tabcontents)
+    function opentab (tabname) {
+
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+
+    }
+    
+  </script>
 </body>
 </html>
