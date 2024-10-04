@@ -279,11 +279,31 @@ nav ul li a:hover::after {
   color: white;
 }
 
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+}
+
 .btn:hover {
   background: #ff004f;
 
 }
 
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
 
 /* ---------contact---------------- */
 .contact-left {
@@ -322,4 +342,11 @@ nav ul li a:hover::after {
   color: #ff004f;
   transform: translateY(-5px);
 
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
 }
