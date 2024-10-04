@@ -370,7 +370,9 @@ form .btn2{
 }
 
 /* -----------------css for small screens--------------- */
-
+nav .fa-solid{
+  display: none;
+}
 
 @media only screen and (max-width: 600px){
   .header-text{ 
@@ -408,6 +410,30 @@ form .btn2{
     cursor: pointer;
     font-weight: 500px;
     font-size:20px;
+  }
+
+  .sub-title{
+    font-size:40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis:100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size:14px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+
+  }
+  .copyright{
+    font-size: 14px;
   }
 }
 
