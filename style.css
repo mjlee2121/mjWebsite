@@ -204,6 +204,16 @@ nav ul li a:hover::after {
 }
 
 /* ------------portfolio----------------- */
+.see-more-comment {
+  font-size: 20px;
+  padding: 16px;
+  margin:20px;
+  font-weight: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#61b752;
+}
 
 #portfolio{
   padding: 50px 0;
